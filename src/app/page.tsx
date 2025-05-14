@@ -102,16 +102,20 @@
 //   );
 // }
 //import ScrollAnimation from '@/components/ScrollAnimation';
-import WaveTransition from '@/components/ui/WaveTransition';
-import HeroSection from '@/components/ui/HeroSection';
+import WaveTransition from '@/components/WaveTransition';
+import HeroSection from '@/components/HeroSection';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
-import ScrollAnimation from '@/components/ui/ScrollAnimation';
+import ScrollAnimation from '@/components/ScrollAnimation';
+import WaveTransitionColor from '@/components/WaveTransitionColor';
+import AboutUs from '@/components/AboutUs';
 
 export default function Home() {
   return (
-    <div>
+    <main>
       <HeroSection />
-      <WaveTransition />
+
+      <WaveTransitionColor />
+      <AboutUs />
       <section className="container mx-auto py-12">
         <ScrollAnimation variant="slideUp">
           <Card>
@@ -137,6 +141,6 @@ export default function Home() {
           </Card>
         </ScrollAnimation>
       </section>
-    </div>
+    </main>
   );
 }
