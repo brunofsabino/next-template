@@ -42,6 +42,7 @@ import { config } from '@/lib/config';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 import { Inter, Poppins } from 'next/font/google';
+import WhatsAppButton from '@/components/WhatsAppButton';
 
 const inter = Inter({ subsets: ['latin'], weight: ['400', '500', '700'] });
 const poppins = Poppins({ subsets: ['latin'], weight: ['600', '700'] });
@@ -66,10 +67,10 @@ export default function RootLayout({
       <head>
         <link rel="icon" href={config.favicon} />
       </head>
-      <body className={`${inter.className} ${poppins.className} font-body text-body`}>
+      <body className={`${inter.className} ${poppins.className} font-body text-body bg-[#FAF5EA]`}>
         <Navbar />
         {children}
-        <Footer />
+        <WhatsAppButton />
       </body>
     </html>
   );

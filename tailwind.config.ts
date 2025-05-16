@@ -54,6 +54,7 @@ export default {
         text: config.colors.text,
         neutral: config.colors.neutral,
         neutralLight: config.colors.neutralLight,
+        beige: config.colors.beige,
         "primary-foreground": "#FFFFFF", // Contraste para primary
       },
       fontFamily: {

@@ -108,39 +108,42 @@ import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import ScrollAnimation from '@/components/ScrollAnimation';
 import WaveTransitionColor from '@/components/WaveTransitionColor';
 import AboutUs from '@/components/AboutUs';
+import ScrollMarquee from '@/components/ScrollMarquee';
+import Products from '@/components/Products';
+import Testimonials from '@/components/Testimonials';
+import Team from '@/components/Team';
+import Contact from '@/components/Contact';
+import Footer from '@/components/Footer';
+import Location from '@/components/Location';
+import CircleTransition from '@/components/CircleTransition';
 
 export default function Home() {
   return (
-    <main>
-      <HeroSection />
 
+
+
+    < main >
+      <HeroSection />
       <WaveTransitionColor />
       <AboutUs />
-      <section className="container mx-auto py-12">
-        <ScrollAnimation variant="slideUp">
-          <Card>
-            <CardHeader>
-              <CardTitle>Bem-vindo à nossa loja</CardTitle>
-            </CardHeader>
-            <CardContent>
-              <p>Oferecemos os melhores produtos e serviços para você.</p>
-            </CardContent>
-          </Card>
-        </ScrollAnimation>
-      </section>
-      <WaveTransition />
-      <section className="container mx-auto py-12">
-        <ScrollAnimation variant="fade">
-          <Card>
-            <CardHeader>
-              <CardTitle>Nossos serviços</CardTitle>
-            </CardHeader>
-            <CardContent>
-              <p>Conheça nossa ampla gama de serviços.</p>
-            </CardContent>
-          </Card>
-        </ScrollAnimation>
-      </section>
-    </main>
+      <ScrollMarquee />
+      <Products />
+      <div className="flex flex-col sm:flex-row m-0 ml-10">
+        <CircleTransition className="w-full " />
+        <CircleTransition className="w-full hidden sm:flex" />
+        <CircleTransition className="w-full hidden sm:flex" />
+        {/* <CircleTransition className="w-full hidden sm:flex" />
+        <CircleTransition className="w-full hidden sm:flex" />
+        <CircleTransition className="w-full hidden sm:flex" />
+        <CircleTransition className="w-full hidden sm:flex" />
+        <CircleTransition className="w-full hidden sm:flex" /> */}
+      </div>
+      <Testimonials />
+      <WaveTransitionColor />
+      <Team />
+      <Location />
+      {/* <Contact /> */}
+      <Footer />
+    </main >
   );
 }

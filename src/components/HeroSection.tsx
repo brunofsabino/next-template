@@ -71,7 +71,7 @@ export default function HeroSection() {
 
     return (
         <section
-            className="relative bg-background text-text py-20"
+            className="relative text-text py-20"
             style={{
                 backgroundImage: `url(${config.backgroundImage})`,
                 backgroundSize: 'cover',
@@ -90,10 +90,10 @@ export default function HeroSection() {
                         className="mx-auto h-16 md:h-20 mb-4"
                         {...logoAnimation}
                     />
-                    <h1 className="font-heading mb-4 text-3xl text-accent drop-shadow-md">
+                    <h1 className="font-heading mb-4 font-extrabold text-3xl text-accent drop-shadow-md">
                         {config.brandName}
                     </h1>
-                    <p className="text-base md:text-xl   mb-6 text-accent">
+                    <p className="text-base md:text-xl font-extrabold  mb-6 text-accent">
                         Os melhores produtos e serviços para você.
                     </p>
                     <Button asChild className="bg-primary text-primary-foreground">

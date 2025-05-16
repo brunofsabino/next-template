@@ -1,0 +1,136 @@
+/* .spinnerPath {
+  transform-origin: center;
+}
+
+.gradientStop1 {
+  animation: colorShift1 10s linear infinite;
+}
+
+.gradientStop2 {
+  animation: colorShift2 10s linear infinite;
+}
+
+.gradientStop3 {
+  animation: colorShift3 10s linear infinite;
+}
+
+@keyframes colorShift1 {
+  0% {
+    stop-color: #4F46E5;
+  }
+  33% {
+    stop-color: #A78BFA;
+  }
+  66% {
+    stop-color: #6B7280;
+  }
+  100% {
+    stop-color: #4F46E5;
+  }
+}
+
+@keyframes colorShift2 {
+  0% {
+    stop-color: #A78BFA;
+  }
+  33% {
+    stop-color: #6B7280;
+  }
+  66% {
+    stop-color: #4F46E5;
+  }
+  100% {
+    stop-color: #A78BFA;
+  }
+}
+
+@keyframes colorShift3 {
+  0% {
+    stop-color: #6B7280;
+  }
+  33% {
+    stop-color: #4F46E5;
+  }
+  66% {
+    stop-color: #A78BFA;
+  }
+  100% {
+    stop-color: #6B7280;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .gradientStop1,
+  .gradientStop2,
+  .gradientStop3 {
+    animation: none;
+  }
+} */
+.circle {
+  transform-origin: center;
+}
+
+.gradientStop1 {
+  animation: colorShift1 10s linear infinite;
+}
+
+.gradientStop2 {
+  animation: colorShift2 10s linear infinite;
+}
+
+.gradientStop3 {
+  animation: colorShift3 10s linear infinite;
+}
+
+@keyframes colorShift1 {
+  0% {
+    stop-color: #4F46E5;
+  }
+  33% {
+    stop-color: #A78BFA;
+  }
+  66% {
+    stop-color: #6B7280;
+  }
+  100% {
+    stop-color: #4F46E5;
+  }
+}
+
+@keyframes colorShift2 {
+  0% {
+    stop-color: #A78BFA;
+  }
+  33% {
+    stop-color: #6B7280;
+  }
+  66% {
+    stop-color: #4F46E5;
+  }
+  100% {
+    stop-color: #A78BFA;
+  }
+}
+
+@keyframes colorShift3 {
+  0% {
+    stop-color: #6B7280;
+  }
+  33% {
+    stop-color: #4F46E5;
+  }
+  66% {
+    stop-color: #A78BFA;
+  }
+  100% {
+    stop-color: #6B7280;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .gradientStop1,
+  .gradientStop2,
+  .gradientStop3 {
+    animation: none;
+  }
+}
