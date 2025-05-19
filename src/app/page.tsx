@@ -116,6 +116,8 @@ import Contact from '@/components/Contact';
 import Footer from '@/components/Footer';
 import Location from '@/components/Location';
 import CircleTransition from '@/components/CircleTransition';
+import CookieConsent from '@/components/CookieConsent';
+import { Toaster } from '@/components/ui/sonner';
 
 export default function Home() {
   return (
@@ -136,7 +138,9 @@ export default function Home() {
       <Team />
       <Location />
       {/* <Contact /> */}
-      <Footer />
+
+      <CookieConsent />
+      <Toaster />
     </main >
   );
 }

@@ -92,7 +92,7 @@ export const config = {
   brandName: "Lojas Loula",
   logo: "/images/logo_white.png",
   logo2: "/images/logo_black.png",
-  favicon: "/favicon.ico",
+  favicon: "/images/favicon.ico",
   backgroundImage: "/images/image_loja.png",
   telWhats: "11959599",
   colors: {
@@ -242,7 +242,7 @@ export const config = {
     links: [
       { label: "Home", href: "/" },
       { label: "Sobre", href: "/#sobre" },
-      { label: "Produtos", href: "/produtos" },
+      { label: "Produtos", href: "/#produtos" },
       { label: "Depoimentos", href: "/#depoimentos" },
       { label: "Equipe", href: "/#equipe" },
       { label: "Contato", href: "/#contato" },
@@ -256,17 +256,18 @@ export const config = {
       { label: "Depoimentos", href: "/#depoimentos" },
       { label: "Equipe", href: "/#equipe" },
       { label: "Contato", href: "/#contato" },
-      { label: "Política de Privacidade", href: "/politica-privacidade" },
-      { label: "Termos de Uso", href: "/termos" },
+      { label: "Política de Privacidade", href: "/politica-de-privacidade" },
+      { label: "Termos de Uso", href: "/termos-de-uso" },
     ],
   },
   ctaText: "Fale agora pelo WhatsApp",
   borderRadius: "8px",
   boxShadow: "0 4px 16px rgba(0,0,0,0.08)",
   meta: {
-    title: "Loula - Loja de Roupas",
-    description: "Descubra as melhores roupas com estilo e qualidade.",
-    ogImage: "/images/og-image.jpg",
+    title: "Lojas Loula - Moda Feminina, Masculina e Acessórios",
+    description:
+      "Tudo em moda feminina, masculina e acessórios em um só lugar na Loja Loula.",
+    ogImage: "/images/logo_white.png",
   },
   social: {
     facebook: "https://facebook.com",
