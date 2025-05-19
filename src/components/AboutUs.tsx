@@ -215,13 +215,20 @@ export default function AboutUs() {
 
     return (
         <section
+            id="sobre"
             className="text-text py-12"
             aria-label="Seção Sobre Nós"
             role="region"
         >
             <div className="container mx-auto px-4 text-center">
                 <ScrollAnimation variant="fade">
-                    <h1 className="font-heading text-3xl mb-4 font-extrabold drop-shadow-md  text-primary ">Sobre Nós</h1>
+                    <motion.h1 // Alterado de <h1> para <motion.h1>
+                        className="font-heading text-3xl mb-4 font-extrabold drop-shadow-md text-primary"
+                        {...titleAnimation}
+                    >
+                        {config.about.title}
+                    </motion.h1>
+                    {/* <h1 className="font-heading text-3xl mb-4 font-extrabold drop-shadow-md  text-primary ">Sobre Nós</h1> */}
                     <motion.p
                         className="font-body text-body max-w-2xl mx-auto text-center mb-12"
                         {...textAnimation}

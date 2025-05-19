@@ -274,12 +274,18 @@ export default function Testimonials() {
         >
             <div className="container mx-auto px-4">
                 <ScrollAnimation variant="fade">
-                    <h1
+                    {/* <h1
                         className="font-heading text-3xl mb-4 font-extrabold drop-shadow-md text-primary"
                         {...titleAnimation}
                     >
                         {config.testimonials.title}
-                    </h1>
+                    </h1> */}
+                    <motion.h1 // Alterado de <h1> para <motion.h1>
+                        className="font-heading text-3xl mb-4 font-extrabold drop-shadow-md text-primary"
+                        {...titleAnimation}
+                    >
+                        {config.testimonials.title}
+                    </motion.h1>
                     <motion.p
                         className="font-body text-body max-w-2xl mx-auto text-center mb-4"
                         {...textAnimation}

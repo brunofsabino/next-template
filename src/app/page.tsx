@@ -128,15 +128,8 @@ export default function Home() {
       <AboutUs />
       <ScrollMarquee />
       <Products />
-      <div className="flex flex-col sm:flex-row m-0 ml-10">
-        <CircleTransition className="w-full " />
-        <CircleTransition className="w-full hidden sm:flex" />
-        <CircleTransition className="w-full hidden sm:flex" />
-        {/* <CircleTransition className="w-full hidden sm:flex" />
-        <CircleTransition className="w-full hidden sm:flex" />
-        <CircleTransition className="w-full hidden sm:flex" />
-        <CircleTransition className="w-full hidden sm:flex" />
-        <CircleTransition className="w-full hidden sm:flex" /> */}
+      <div className="w-full">
+        <CircleTransition className="w-full" />
       </div>
       <Testimonials />
       <WaveTransitionColor />

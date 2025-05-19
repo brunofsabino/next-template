@@ -76,9 +76,15 @@ export default function Products() {
         >
             <div className="container mx-auto px-4 text-center">
                 <ScrollAnimation variant="fade">
-                    <h1 className="font-heading text-3xl mb-4 font-extrabold drop-shadow-md text-primary">
+                    <motion.h1 // Alterado de <h1> para <motion.h1>
+                        className="font-heading text-3xl mb-4 font-extrabold drop-shadow-md text-primary"
+                        {...titleAnimation}
+                    >
                         {config.products.title}
-                    </h1>
+                    </motion.h1>
+                    {/* <h1 className="font-heading text-3xl mb-4 font-extrabold drop-shadow-md text-primary">
+                        {config.products.title}
+                    </h1> */}
                     <motion.p
                         className="font-body text-body max-w-2xl mx-auto text-center mb-12"
                         {...textAnimation}
@@ -101,8 +107,8 @@ export default function Products() {
                                         />
                                         <CardTitle
                                             className={`font-heading text-h2 text-center mt-4 transition-colors duration-300 ${isTouched[index]
-                                                    ? 'text-primary-foreground'
-                                                    : 'text-text group-hover:text-primary-foreground'
+                                                ? 'text-primary-foreground'
+                                                : 'text-text group-hover:text-primary-foreground'
                                                 }`}
                                         >
                                             {product.title}
@@ -111,8 +117,8 @@ export default function Products() {
                                     <CardContent className="text-center">
                                         <p
                                             className={`font-body text-body mb-4 transition-colors duration-300 ${isTouched[index]
-                                                    ? 'text-primary-foreground'
-                                                    : 'text-neutral group-hover:text-primary-foreground'
+                                                ? 'text-primary-foreground'
+                                                : 'text-neutral group-hover:text-primary-foreground'
                                                 }`}
                                         >
                                             {product.description}
@@ -120,8 +126,8 @@ export default function Products() {
                                         <Button
                                             asChild
                                             className={`${isTouched[index]
-                                                    ? 'bg-primary-foreground text-primary'
-                                                    : 'bg-primary text-primary-foreground group-hover:bg-primary-foreground group-hover:text-primary'
+                                                ? 'bg-primary-foreground text-primary'
+                                                : 'bg-primary text-primary-foreground group-hover:bg-primary-foreground group-hover:text-primary'
                                                 } hover:bg-accent hover:text-accent-foreground transition-colors duration-300`}
                                         >
                                             <a href={whatsAppLink} target="_blank" rel="noopener noreferrer">

@@ -230,17 +230,31 @@ export const config = {
     description: "Envie sua mensagem ou fale diretamente pelo WhatsApp.",
   },
   location: {
-    title: "Onde Estamos",
-    description: "Visite nossa loja e conheça nossas coleções!",
-    address: "Rua Exemplo, 123, Centro, São Paulo, SP, 01001-000",
+    title: "Entre em Contato", //Onde Estamos
+    description: "Envie sua mensagem ou fale diretamente pelo WhatsApp.", //Visite nossa loja e conheça nossas coleções!",
+    description2: "Preencha os dados e clique em Enviar Mensagem", //Visite nossa loja e conheça nossas coleções!",
+    address:
+      "Av. Waldemar Carlos Pereira, 477 - Vila Matilde, São Paulo - SP, 03533-001",
     mapsUrl:
-      "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.123456789!2d-46.633308!3d-23.550520!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce59c8c6e7d6b5%3A0x1e5b7c8d9a0b1c2d!2sRua%20Exemplo%2C%20123%2C%20S%C3%A3o%20Paulo%20-%20SP!5e0!3m2!1spt-BR!2sbr!4v1631234567890!5m2!1spt-BR!2sbr",
+      "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.699056109385!2d-46.5208593!3d-23.5433241!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce5fb9048d39c9%3A0x151aa800660d39e!2sLoja%20Loula!5e0!3m2!1spt-BR!2sbr!4v1747584043772!5m2!1spt-BR!2sbr",
+  },
+  navbar: {
+    links: [
+      { label: "Home", href: "/" },
+      { label: "Sobre", href: "/#sobre" },
+      { label: "Produtos", href: "/produtos" },
+      { label: "Depoimentos", href: "/#depoimentos" },
+      { label: "Equipe", href: "/#equipe" },
+      { label: "Contato", href: "/#contato" },
+    ],
   },
   footer: {
     links: [
       { label: "Home", href: "/" },
       { label: "Sobre", href: "/#sobre" },
       { label: "Produtos", href: "/#produtos" },
+      { label: "Depoimentos", href: "/#depoimentos" },
+      { label: "Equipe", href: "/#equipe" },
       { label: "Contato", href: "/#contato" },
       { label: "Política de Privacidade", href: "/politica-privacidade" },
       { label: "Termos de Uso", href: "/termos" },

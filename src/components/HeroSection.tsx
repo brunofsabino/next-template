@@ -68,9 +68,18 @@ export default function HeroSection() {
                 },
             },
         };
-
+    // Animações
+    const titleAnimation = shouldReduceMotion
+        ? {}
+        : {
+            initial: { opacity: 0, y: 50 },
+            whileInView: { opacity: 1, y: 0 },
+            transition: { duration: 1, ease: [0.25, 0.1, 0.25, 1] },
+            viewport: { once: true },
+        };
     return (
         <section
+            id="/"
             className="relative text-text py-20"
             style={{
                 backgroundImage: `url(${config.backgroundImage})`,
@@ -80,21 +89,27 @@ export default function HeroSection() {
         >
             <div
                 className="absolute inset-0"
-                style={{ backgroundColor: hexToRgba(config.colors.primary, 0.7) }}
+                style={{ backgroundColor: hexToRgba(config.colors.primary, 0.4) }}
             />
-            <div className="relative container mx-auto text-center">
+            <div className="relative container mx-auto text-center bg-[#bcbae1a1] rounded-4xl w-[fit-content] p-6">
                 <ScrollAnimation variant="fade">
                     <motion.img
-                        src={config.logo}
+                        src={config.logo2}
                         alt={config.brandName}
                         className="mx-auto h-16 md:h-20 mb-4"
                         {...logoAnimation}
                     />
-                    <h1 className="font-heading mb-4 font-extrabold text-3xl text-accent drop-shadow-md">
+                    <motion.h1 // Alterado de <h1> para <motion.h1>
+                        className="font-heading mb-4 font-bold text-3xl text-primary drop-shadow-md"
+                        {...titleAnimation}
+                    >
                         {config.brandName}
-                    </h1>
-                    <p className="text-base md:text-xl font-extrabold  mb-6 text-accent">
-                        Os melhores produtos e serviços para você.
+                    </motion.h1>
+                    {/* <h1 className="font-heading mb-4 font-extrabold text-3xl text-accent drop-shadow-md">
+                        {config.brandName}
+                    </h1> */}
+                    <p className="text-base md:text-xl font-semibold  mb-6 text-primary">
+                        Moda feminina, masculina e acessórios para seu estilo.
                     </p>
                     <Button asChild className="bg-primary text-primary-foreground">
                         <a

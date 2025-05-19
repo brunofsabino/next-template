@@ -2,6 +2,7 @@
 import { config } from '@/lib/config';
 import { MessageCircle } from 'lucide-react';
 import { useState, useEffect } from 'react';
+import { motion } from 'framer-motion';
 
 export default function WhatsAppButton() {
     const [isTouched, setIsTouched] = useState(false);
@@ -13,20 +14,29 @@ export default function WhatsAppButton() {
         }
     }, [isTouched]);
 
-    const whatsAppLink = `https://wa.me/${config.telWhats
-        }?text=Olá,%20quero%20entrar%20em%20contato!`;
+    const whatsAppLink = `https://wa.me/${config.telWhats}?text=Olá,%20quero%20entrar%20em%20contato!`;
 
     return (
-        <a
+        <motion.a
             href={whatsAppLink}
             target="_blank"
             rel="noopener noreferrer"
-            className={`fixed bottom-6 right-6 bg-primary text-primary-foreground rounded-full p-4 shadow-lg transition-transform duration-300 ${isTouched ? 'scale-110' : 'hover:scale-110'
-                }`}
+            className="fixed bottom-6 right-6 bg-[#25D366] text-white rounded-full p-4 shadow-lg z-99"
             onClick={() => setIsTouched(true)}
             aria-label="Fale pelo WhatsApp"
+            whileHover={{ scale: 1.1 }}
+            whileTap={{ scale: 0.9 }}
+            animate={{
+                y: [0, -10, 0],
+            }}
+            transition={{
+                duration: 2,
+                repeat: Infinity,
+                repeatType: "reverse",
+                ease: "easeInOut"
+            }}
         >
             <MessageCircle className="h-6 w-6" aria-hidden="true" />
-        </a>
+        </motion.a>
     );
 }

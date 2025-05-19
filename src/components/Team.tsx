@@ -211,18 +211,18 @@ export default function Team() {
         >
             <div className="container mx-auto px-4 text-center">
                 <ScrollAnimation variant="fade">
-                    {/* <motion.h1
-                        className="font-heading text-h1 text-accent drop-shadow-md text-center mb-4"
-                        {...titleAnimation}
-                    >
-                        
-                    </motion.h1> */}
-                    <h1
+                    <motion.h1 // Alterado de <h1> para <motion.h1>
                         className="font-heading text-3xl mb-4 font-extrabold drop-shadow-md text-primary"
                         {...titleAnimation}
                     >
                         {config.team.title}
-                    </h1>
+                    </motion.h1>
+                    {/* <h1
+                        className="font-heading text-3xl mb-4 font-extrabold drop-shadow-md text-primary"
+                        {...titleAnimation}
+                    >
+                        {config.team.title}
+                    </h1> */}
                     <motion.p
                         className="font-body text-body max-w-2xl mx-auto text-center mb-12"
                         {...textAnimation}
