@@ -1,32 +1,3 @@
-// 'use client'
-
-// import { useScroll, useTransform, motion } from 'framer-motion'
-// import { useRef } from 'react'
-
-// export default function ScrollMarquee() {
-//     const containerRef = useRef(null)
-
-//     // Pegamos a posição de scroll do container
-//     const { scrollYProgress } = useScroll({
-//         target: containerRef,
-//         offset: ['start end', 'end start'], // define a faixa de animação
-//     })
-
-//     // Criamos transformações de movimento horizontal baseadas no scroll vertical
-//     const x1 = useTransform(scrollYProgress, [0, 1], ['0%', '-50%'])
-//     const x2 = useTransform(scrollYProgress, [0, 1], ['0%', '50%'])
-
-//     return (
-//         <div ref={containerRef} className="overflow-hidden bg-white py-12">
-//             <motion.div style={{ x: x1 }} className="whitespace-nowrap text-4xl font-bold uppercase text-black py-4">
-//                 Texto em movimento para esquerda • Texto em movimento para esquerda •
-//             </motion.div>
-//             <motion.div style={{ x: x2 }} className="whitespace-nowrap text-4xl font-bold uppercase text-black py-4">
-//                 Texto em movimento para direita • Texto em movimento para direita •
-//             </motion.div>
-//         </div>
-//     )
-// }
 'use client'
 
 import { config } from '@/lib/config'
